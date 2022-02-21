@@ -1,0 +1,19 @@
+<div class="unlock-logo">
+  <img class="logo" src="../../../assets/unlock-logo/shape.png" />
+</div>
+<h1 class="unlock-title">
+  Ronin Wallet
+</h1>
+<p class="unlock-subtitle">
+  Your Digital Passort
+</p>
+<div class="unlock-password">
+  <label>ENTER PASSWORD</label>
+  <nz-input-group [nzSuffix]="suffixIconSearch">
+    <input type="text" nz-input placeholder="Enter password" />
+  </nz-input-group>
+  <ng-template #suffixIconSearch>
+    <i nz-icon nzType="search"></i>
+  </ng-template>
+</div>
+<button class="unlock-button" nz-button>Unlock</button>

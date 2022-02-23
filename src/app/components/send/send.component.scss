@@ -1,0 +1,26 @@
+@import '../../../styles/core.scss';
+
+:host {
+  @include host-container;
+}
+
+.send-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+
+    p {
+        margin: 18rem 0;
+        font-size: 14rem;
+        font-weight: 600;
+        line-height: 20rem;
+    }
+    img {
+        height: 24rem;
+        position: absolute;
+        top: 16rem;
+        left: 24rem;
+    }
+}

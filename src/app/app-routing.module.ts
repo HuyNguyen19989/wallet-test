@@ -11,8 +11,12 @@ const routes: Routes = [
     loadChildren: () => import('./components/unlock-wallet/unlock-wallet.module').then(m => m.UnlockWalletModule)
   },
   {
+    path: 'send',
+    loadChildren: () => import('./components/send/send.module').then(m => m.SendModule)
+  },
+  {
     path: '',
-    redirectTo: 'main',
+    redirectTo: 'send',
     pathMatch: 'full'
   }
 ];

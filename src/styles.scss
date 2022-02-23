@@ -1,9 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
- * {
-     box-sizing: border-box;
- }
+* {
+  box-sizing: border-box;
+}
 
- body {
-     height: 100vh;
-     margin: 0;
- }
+html {
+  font-size: 1px;
+  user-select: none;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-size: 16rem;
+  line-height: 23rem;
+}
+
+html:not([support-responsive]) {
+  font-size: calc(100vw / 360);
+}
+
+@media all and (min-width: 478px) {
+  html {
+    font-size: calc(100vw / 540) !important;
+  }
+}
+
+@media all and (min-width: 778px) {
+  html {
+    font-size: calc(100vw / 720) !important;
+  }
+}
+
+@media all and (min-width: 1078px) {
+  html {
+    font-size: calc(100vw / 1260) !important;
+  }
+}

@@ -1,66 +1,77 @@
+@import '../../../styles/core.scss';
+
 :host {
-    height: 600px;
-    width: 375px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  @include host-container;
+}
+
+.unlock-contain {
+  display: flex;
+  justify-content: center;
+  width: calc(100% - 40rem);
+  margin-top: 62rem;
+  background-image: url('../../../assets/unlock-logo/background.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .unlock-logo {
-    background-image: url('../../../assets/unlock-logo/background_shape.png');
-    background-size: contain;
-    margin-top: 96px;
+  background-image: url('../../../assets/unlock-logo/background_shape.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 34rem 0 10rem 0;
 
-    .logo {
-        height: 108px;
-        margin: 18.5px 18.5px 30px 18.5px;
-    }
+  .logo {
+    height: 108rem;
+    margin: 18.5rem 18.5rem 30rem 18.5rem;
+  }
 }
 
 .unlock-title {
-    margin: 24px 0 0 0;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 40px;
+  margin: 24rem 0 0 0;
+  font-size: 32rem;
+  font-weight: 700;
+  line-height: 40rem;
 }
 
 .unlock-subtitle {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    margin: 8px 0 0 0;
+  font-size: 14rem;
+  font-weight: 400;
+  line-height: 20rem;
+  margin: 8rem 0 0 0;
 }
 
 .unlock-password {
-    width: 100%;
-    margin-top: 24px;
-    padding: 0 20px;
+  width: 100%;
+  margin-top: 24rem;
+  padding: 0 20rem;
 
-    label {
-        font-size: 10px;
-        font-weight: 700;
-        line-height: 16px;
-        color: #57627B;
-        padding-left: 8px;
-    }
+  label {
+    font-size: 10rem;
+    font-weight: 700;
+    line-height: 16rem;
+    color: #57627b;
+    padding-left: 8rem;
+  }
 
-    ::ng-deep nz-input-group {
-        border-radius: 8px;
-    }
+  ::ng-deep nz-input-group {
+    border-radius: 8rem;
+    font-size: 14rem;
+  }
 }
 
 :host ::ng-deep .unlock-button {
-    height: unset;
-    margin-top: 24px;
-    padding: 10px 20px;
-    background-image: linear-gradient(to left, #1C94F4, #1273EA);
-    border-radius: 8px;
+  height: unset;
+  margin-top: 24rem;
+  padding: 10rem 20rem;
+  background-image: linear-gradient(to left, #1c94f4, #1273ea);
+  border-radius: 8rem;
 
-    span {
-        font-size: 14px;
-        font-weight: bold;
-        line-height: 20px;
-        color: #fff;
-    }
+  span {
+    font-size: 14rem;
+    font-weight: bold;
+    line-height: 20rem;
+    color: #fff;
+  }
 }

@@ -1,5 +1,7 @@
-<div class="unlock-logo">
-  <img class="logo" src="../../../assets/unlock-logo/shape.png" />
+<div class="unlock-contain">
+  <div class="unlock-logo">
+    <img class="logo" src="../../../assets/unlock-logo/shape.png" />
+  </div>
 </div>
 <h1 class="unlock-title">
   Ronin Wallet
@@ -13,7 +15,7 @@
     <input type="text" nz-input placeholder="Enter password" />
   </nz-input-group>
   <ng-template #suffixIconSearch>
-    <i nz-icon nzType="search"></i>
+    <i nz-icon [nzType]="false? 'eye' : 'eye-invisible'" nzTheme="outline"></i>
   </ng-template>
 </div>
 <button class="unlock-button" nz-button>Unlock</button>

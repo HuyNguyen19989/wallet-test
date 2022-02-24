@@ -4,6 +4,9 @@ import { SendComponent } from './send.component';
 import { RouterModule, Routes } from '@angular/router';
 
 import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzIconModule } from 'ng-zorro-antd/icon';
 
 
 
@@ -16,7 +19,10 @@ const routes: Routes = [
 ];
 
 const ANT_MODULE = [
-  NzPageHeaderModule
+  NzPageHeaderModule,
+  NzInputModule,
+  NzButtonModule,
+  NzIconModule
 ]
 
 @NgModule({

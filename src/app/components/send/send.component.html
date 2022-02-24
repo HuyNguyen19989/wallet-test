@@ -1,6 +1,48 @@
 <div class="send-header">
-    <p>
-        Send Assets
-    </p>
-    <img src="../../../assets/send/chevron-left.png" (click)="onBack()">
+  <p>
+      Send Assets
+  </p>
+  <img src="../../../assets/send/chevron-left.png" (click)="onBack()">
+</div>
+<div class="send-container">
+  <div class="send-input">
+    <label>FROM</label>
+    <div class="my-wallet">
+      <p>
+        <span>My wallet</span>(7300...3334)
+      </p>
+    </div>
+  </div>
+  <div class="send-input">
+    <label>TO</label>
+    <nz-input-group>
+      <input type="text" nz-input/>
+    </nz-input-group>
+  </div>
+  <div class="send-input">
+    <label>ASSET</label>
+    <div class="asset">
+      <div class="currency">
+        <img src="../../../assets/main/eur.png">
+        <span>EUR</span>
+      </div>
+      <img src="../../../assets/send/layers.png">
+    </div>
+  </div>
+  <div class="send-input">
+    <div class="label">
+      <label>AMOUNT</label>
+      <label class="avalaible">AVALAIBLE: 50 EUR</label>
+    </div>
+    <nz-input-group>
+      <input type="text" nz-input placeholder="" />
+    </nz-input-group>
+    <ng-template #suffixIconSearch>
+      <i nz-icon nzType="search"></i>
+    </ng-template>
+  </div>
+</div>
+<div class="send-footer">
+  <button class="cancel-button" nz-button>Cancel</button>
+  <button class="send-button" nz-button>Send</button>
 </div>

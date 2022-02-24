@@ -2,25 +2,156 @@
 
 :host {
   @include host-container;
+  position: relative;
 }
 
 .send-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+
+  p {
+    margin: 18rem 0;
+    font-size: 14rem;
+    font-weight: 600;
+    line-height: 20rem;
+  }
+  img {
+    height: 24rem;
+    position: absolute;
+    top: 16rem;
+    left: 24rem;
+  }
+}
+
+.send-container {
+  width: calc(100% - 40rem);
+  margin-top: 24rem;
+
+  .send-input {
     width: 100%;
 
-    p {
-        margin: 18rem 0;
-        font-size: 14rem;
-        font-weight: 600;
-        line-height: 20rem;
+    label {
+      font-size: 10rem;
+      font-weight: 700;
+      line-height: 16rem;
+      color: #57627b;
+      padding-left: 8rem;
     }
-    img {
-        height: 24rem;
-        position: absolute;
-        top: 16rem;
-        left: 24rem;
+
+    ::ng-deep .ant-input {
+      margin-top: 4rem;
+      border-radius: 8rem;
+      font-size: 14rem;
+      line-height: 20rem;
+      padding: 10rem 16rem;
     }
+    ::ng-deep .ant-input-disabled {
+      background-color: #edf1f7;
+      color: #8f9bb3;
+    }
+  }
+
+  .send-input:nth-child(n + 2) {
+    margin-top: 16rem;
+  }
 }
+
+.my-wallet {
+  margin-top: 4rem;
+  border: 1px solid #c5cee0;
+  background-color: #edf1f7;
+  color: #8f9bb3;
+  border-radius: 8rem;
+  padding: 10rem 16rem;
+
+  p {
+    margin: 0;
+    font-size: 14rem;
+    line-height: 20rem;
+    font-weight: 400;
+
+    span {
+      color: #8f9bb3;
+      font-weight: 600;
+      margin-right: 8rem;
+    }
+  }
+}
+
+.asset {
+  margin-top: 4rem;
+  border: 1px solid #c5cee0;
+  border-radius: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem 16rem;
+
+  .currency {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: 8rem;
+      font-size: 14rem;
+      font-weight: 400;
+      line-height: 20rem;
+      color: #151A30;
+    }
+  }
+
+  img {
+    height: 24rem;
+  }
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+
+  .avalaible {
+    color: #000 !important;
+    padding-left: 0 !important;
+    padding-right: 8rem;
+  }
+}
+
+.send-footer {
+  position: absolute;
+  bottom: 20rem;
+  left: 20rem;
+
+  ::ng-deep .cancel-button {
+    height: 40rem;
+    width: 152rem;
+    background-color: #F7F9FC;
+    border-radius: 8rem;
+    margin-right: 16rem;
+    border: none;
+  
+    span {
+      font-size: 14rem;
+      font-weight: 600;
+      line-height: 20rem;
+      color: #1273EA;
+    }
+  }
+
+  ::ng-deep .send-button {
+    height: 40rem;
+    width: 152rem;
+    background-image: linear-gradient(to left, #1c94f4, #1273ea);
+    border-radius: 8rem;
+  
+    span {
+      font-size: 14rem;
+      font-weight: 600;
+      line-height: 20rem;
+      color: #fff;
+    }
+  }
+}
+
